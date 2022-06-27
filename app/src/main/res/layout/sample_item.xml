@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/date"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="cloudy"
+        android:src="@drawable/cloudy" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/min_temperature"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/max_temperature"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="60dp"/>
+
+</RelativeLayout>
