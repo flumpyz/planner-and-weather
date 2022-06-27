@@ -17,4 +17,13 @@
         android:id="@+id/weatherInfoFragment"
         android:name="com.zotreex.sample_project.ui.WeatherInfoFragment"
         android:label="WeatherInfoFragment" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.zotreex.sample_project.ui.SearchFragment"
+        android:label="WeatherInfoFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_weatherInfoFragment"
+            app:destination="@id/weatherInfoFragment" />
+    </fragment>
 </navigation>

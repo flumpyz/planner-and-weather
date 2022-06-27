@@ -4,10 +4,10 @@
         android:icon="@drawable/cloudy"
         android:title="@string/weather_list" />
 
-<!--    <item-->
-<!--        android:id="@+id/productListFragment"-->
-<!--        android:icon="@drawable/ic_baseline_home_24"-->
-<!--        android:title="@string/catalog" />-->
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/search"
+        android:title="@string/search" />
 
 <!--    <item-->
 <!--        android:id="@+id/productListFragment"-->
