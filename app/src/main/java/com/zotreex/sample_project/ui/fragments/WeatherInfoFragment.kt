@@ -1,4 +1,4 @@
-package com.zotreex.sample_project.ui
+package com.zotreex.sample_project.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,7 @@ import com.zotreex.sample_project.databinding.FragmentWeatherInfoBinding
 import com.zotreex.sample_project.di.ViewModelFactory
 import com.zotreex.sample_project.di.appComponent
 import com.zotreex.sample_project.domain.data.UiState
+import com.zotreex.sample_project.ui.viewModels.WeatherInfoViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import javax.inject.Inject

@@ -2,10 +2,10 @@ package com.zotreex.sample_project.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.zotreex.sample_project.ui.SampleViewModel
-import com.zotreex.sample_project.ui.SearchViewModel
-import com.zotreex.sample_project.ui.SettingsViewModel
-import com.zotreex.sample_project.ui.WeatherInfoViewModel
+import com.zotreex.sample_project.ui.viewModels.SampleViewModel
+import com.zotreex.sample_project.ui.viewModels.SearchViewModel
+import com.zotreex.sample_project.ui.viewModels.SettingsViewModel
+import com.zotreex.sample_project.ui.viewModels.WeatherInfoViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

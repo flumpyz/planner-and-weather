@@ -1,9 +1,8 @@
-package com.zotreex.sample_project.ui
+package com.zotreex.sample_project.ui.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.zotreex.sample_project.domain.data.SampleItem
 import com.zotreex.sample_project.domain.data.SampleItemList
 import com.zotreex.sample_project.domain.data.UiState
 import com.zotreex.sample_project.domain.usecases.getSampleList.GetSampleListUseCase

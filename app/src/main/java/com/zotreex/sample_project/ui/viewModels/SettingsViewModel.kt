@@ -1,9 +1,7 @@
-package com.zotreex.sample_project.ui
+package com.zotreex.sample_project.ui.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.zotreex.sample_project.domain.data.SampleItemList
-import com.zotreex.sample_project.domain.data.UiState
 import javax.inject.Inject
 
 class SettingsViewModel @Inject constructor(

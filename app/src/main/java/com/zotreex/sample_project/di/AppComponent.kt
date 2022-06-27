@@ -1,9 +1,9 @@
 package com.zotreex.sample_project.di
 
-import com.zotreex.sample_project.ui.SampleFragment
-import com.zotreex.sample_project.ui.SearchFragment
-import com.zotreex.sample_project.ui.SettingsFragment
-import com.zotreex.sample_project.ui.WeatherInfoFragment
+import com.zotreex.sample_project.ui.fragments.SampleFragment
+import com.zotreex.sample_project.ui.fragments.SearchFragment
+import com.zotreex.sample_project.ui.fragments.SettingsFragment
+import com.zotreex.sample_project.ui.fragments.WeatherInfoFragment
 import dagger.Component
 import dagger.Module
 

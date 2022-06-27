@@ -1,14 +1,12 @@
-package com.zotreex.sample_project.ui
+package com.zotreex.sample_project.ui.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.zotreex.sample_project.domain.data.SampleItemList
 import com.zotreex.sample_project.domain.data.UiState
-import com.zotreex.sample_project.domain.data.WeatherInfo
 import com.zotreex.sample_project.domain.usecases.getSampleList.GetSampleListUseCase
 import kotlinx.coroutines.launch
-import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import javax.inject.Inject

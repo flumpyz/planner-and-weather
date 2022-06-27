@@ -1,20 +1,16 @@
-package com.zotreex.sample_project.ui
+package com.zotreex.sample_project.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.preference.PreferenceFragmentCompat
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.zotreex.sample_project.R
-import com.zotreex.sample_project.databinding.FragmentSearchBinding
 import com.zotreex.sample_project.databinding.FragmentSettingsBinding
 import com.zotreex.sample_project.di.ViewModelFactory
 import com.zotreex.sample_project.di.appComponent
-import com.zotreex.sample_project.domain.data.UiState
+import com.zotreex.sample_project.ui.viewModels.SettingsViewModel
 import javax.inject.Inject
 
 class SettingsFragment : Fragment(R.layout.fragment_settings) {

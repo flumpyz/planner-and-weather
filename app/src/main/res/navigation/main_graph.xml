@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/sampleFragment"
-        android:name="com.zotreex.sample_project.ui.SampleFragment"
+        android:name="com.zotreex.sample_project.ui.fragments.SampleFragment"
         android:label="SampleFragment" >
         <action
             android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
@@ -18,12 +18,12 @@
 
     <fragment
         android:id="@+id/weatherInfoFragment"
-        android:name="com.zotreex.sample_project.ui.WeatherInfoFragment"
+        android:name="com.zotreex.sample_project.ui.fragments.WeatherInfoFragment"
         android:label="WeatherInfoFragment" />
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.zotreex.sample_project.ui.SearchFragment"
+        android:name="com.zotreex.sample_project.ui.fragments.SearchFragment"
         android:label="SearchFragment" >
         <action
             android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
@@ -32,6 +32,6 @@
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.zotreex.sample_project.ui.SettingsFragment"
+        android:name="com.zotreex.sample_project.ui.fragments.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>
