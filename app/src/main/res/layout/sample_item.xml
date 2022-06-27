@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/date"
         android:layout_width="104dp"
         android:layout_height="38dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -18,33 +20,73 @@
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/date"
         android:contentDescription="cloudy"
         android:src="@drawable/cloudy" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/min_temperature"
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="38dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="@+id/icon"
         android:textSize="16sp" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/max_temperature"
-        android:layout_width="50dp"
+        android:id="@+id/min_temp_sign"
+        android:layout_width="10dp"
         android:layout_height="38dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/min_temperature"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        android:text="°"
         android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sign"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:text="~"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/min_temp_sign"
+        app:layout_constraintTop_toTopOf="@+id/min_temperature" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/max_temperature"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        app:layout_constraintLeft_toRightOf="@+id/sign"
+        app:layout_constraintTop_toTopOf="@+id/sign"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/max_temp_sign"
+        android:layout_width="10dp"
+        android:layout_height="38dp"
+        app:layout_constraintLeft_toRightOf="@+id/max_temperature"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        android:text="°"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/datetime"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="60dp"/>
+        android:text="more"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@+id/max_temp_sign"
+        app:layout_constraintTop_toBottomOf="@+id/max_temperature" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.zotreex.sample_project.domain.repository
 
 import com.zotreex.sample_project.domain.data.SampleItem
 import com.zotreex.sample_project.domain.data.SampleItemList
+import com.zotreex.sample_project.domain.data.WeatherInfo
 
 interface SampleRepository {
     suspend fun getSampleList(
@@ -12,6 +13,7 @@ interface SampleRepository {
 
     suspend fun getSampleItem(
         cityName: String,
-        date: String
-    ): SampleItem
+        dateFrom: String,
+        dateTo: String
+    ): WeatherInfo
 }

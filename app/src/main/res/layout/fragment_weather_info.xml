@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="102dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="cloudy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudy" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/day"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="20dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/date"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/temperature"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TEMPERATURE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/temperature_value"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/temperature_value_sign"
+        android:layout_width="15dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="°"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/temperature_value"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/feels_like"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="FEELS LIKE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/temperature"
+        app:layout_constraintTop_toBottomOf="@+id/temperature" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/feels_like_value"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/temperature_value"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/feels_like_value_sign"
+        android:layout_width="15dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="°"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/temperature_value_sign"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value_sign" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/humidity"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="HUMIDITY"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/feels_like"
+        app:layout_constraintTop_toBottomOf="@+id/feels_like" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/humidity_value"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/feels_like_value"
+        app:layout_constraintTop_toBottomOf="@+id/feels_like_value" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/humidity_value_sign"
+        android:layout_width="15dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="%"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/feels_like_value_sign"
+        app:layout_constraintTop_toBottomOf="@+id/feels_like_value_sign" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wind_speed"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="WIND SPEED"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/humidity"
+        app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wind_speed_value"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/humidity_value"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/wind_speed_value_sign"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="km/h"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/humidity_value_sign"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value_sign" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pressure"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="PRESSURE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/wind_speed"
+        app:layout_constraintTop_toBottomOf="@+id/wind_speed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pressure_value"
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/wind_speed_value"
+        app:layout_constraintTop_toBottomOf="@+id/wind_speed_value" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pressure_value_sign"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="hPa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/wind_speed_value_sign"
+        app:layout_constraintTop_toBottomOf="@+id/wind_speed_value_sign" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/conditions"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="DESCRIPTION :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/pressure"
+        app:layout_constraintTop_toBottomOf="@+id/pressure" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/conditions_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/conditions" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

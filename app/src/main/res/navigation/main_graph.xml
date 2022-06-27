@@ -7,5 +7,14 @@
     <fragment
         android:id="@+id/sampleFragment"
         android:name="com.zotreex.sample_project.ui.SampleFragment"
-        android:label="SampleFragment" />
+        android:label="SampleFragment" >
+        <action
+            android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
+            app:destination="@id/weatherInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherInfoFragment"
+        android:name="com.zotreex.sample_project.ui.WeatherInfoFragment"
+        android:label="WeatherInfoFragment" />
 </navigation>

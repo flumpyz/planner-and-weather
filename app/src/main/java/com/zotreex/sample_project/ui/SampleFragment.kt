@@ -45,10 +45,6 @@ class SampleFragment : Fragment(R.layout.fragment_sample) {
             }
 
         }
-
-//        binding.button.setOnClickListener {
-//            viewModel.setLive()
-//        }
     }
 
 }

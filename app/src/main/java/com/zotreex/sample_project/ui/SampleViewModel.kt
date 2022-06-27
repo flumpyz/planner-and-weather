@@ -42,4 +42,5 @@ class SampleViewModel @Inject constructor(
             liveData.postValue(UiState.Success(list))
         }
     }
+
 }

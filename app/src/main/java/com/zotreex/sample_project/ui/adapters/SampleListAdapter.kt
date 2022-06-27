@@ -2,15 +2,16 @@ package com.zotreex.sample_project.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
+import com.zotreex.sample_project.R
 import com.zotreex.sample_project.databinding.SampleItemBinding
 import com.zotreex.sample_project.domain.data.SampleItem
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-import java.util.*
 
 class SampleListAdapter() :
     ListAdapter<SampleItem, SampleListAdapter.ViewHolder>(SampleDiffCallBack()) {
@@ -35,7 +36,16 @@ class SampleListAdapter() :
             binding.date.text = currentFormattedDate
             binding.minTemperature.text = item.minTemperature.toString()
             binding.maxTemperature.text = item.maxTemperature.toString()
-//            Picasso.get().load("@mipmap/ic_part_cloudy_round").into(binding.icon)
+            binding.datetime.text = currentDate.toString()
+
+            binding.button.setOnClickListener {
+                Navigation.findNavController(it)
+                    .navigate(
+                        R.id.action_sampleFragment_to_weatherInfoFragment,
+                        bundleOf(Pair("datetime", item.datetime))
+                    )
+
+            }
         }
     }
 

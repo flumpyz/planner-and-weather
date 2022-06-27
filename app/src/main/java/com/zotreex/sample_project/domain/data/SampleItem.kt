@@ -27,7 +27,7 @@ data class SampleItem(
     @SerializedName("pressure")
     var pressure : Float? = null,
 
-    @SerializedName("conditions")
+    @SerializedName("description")
     var conditions : String? = null,
 
     @SerializedName("icon")
