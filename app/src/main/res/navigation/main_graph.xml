@@ -23,7 +23,7 @@
         android:name="com.zotreex.sample_project.ui.SearchFragment"
         android:label="WeatherInfoFragment" >
         <action
-            android:id="@+id/action_searchFragment_to_weatherInfoFragment"
+            android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
             app:destination="@id/weatherInfoFragment" />
     </fragment>
 </navigation>

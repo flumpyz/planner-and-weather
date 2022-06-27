@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/sampleFragment"
-        android:icon="@drawable/cloudy"
+        android:icon="@drawable/clouds"
         android:title="@string/weather_list" />
 
     <item

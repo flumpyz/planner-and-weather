@@ -26,8 +26,12 @@ class SearchViewModel @Inject constructor(
         val nextFormattedDate = nextDate.format(formatter)
 
         viewModelScope.launch {
-            val list = getSampleListUseCase(city, currentFormattedDate, nextFormattedDate)
-            liveData.postValue(UiState.Success(list))
+            try {
+                val list = getSampleListUseCase(city, currentFormattedDate, nextFormattedDate)
+                liveData.postValue(UiState.Success(list))
+            } catch (e: Exception) {
+                liveData.postValue(UiState.Error("Не удалось получить данные по вашему запросу"))
+            }
         }
     }
 }

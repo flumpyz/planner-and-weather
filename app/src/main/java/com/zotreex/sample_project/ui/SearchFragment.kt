@@ -49,8 +49,20 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                 binding.progress.visibility = View.GONE
 
             if(it is UiState.Success) {
+                binding.sampleAdapter.visibility = View.VISIBLE
+                binding.cityName.visibility = View.VISIBLE
+                binding.errorMsg.visibility = View.GONE
+
                 binding.cityName.text = it.value.cityName
                 adapter.submitList(it.value.daysInfo)
+            }
+
+            if(it is UiState.Error) {
+                binding.sampleAdapter.visibility = View.GONE
+                binding.cityName.visibility = View.GONE
+                binding.errorMsg.visibility = View.VISIBLE
+
+                binding.errorMsg.text = it.msg
             }
 
         }
