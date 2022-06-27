@@ -9,8 +9,8 @@
         android:icon="@drawable/search"
         android:title="@string/search" />
 
-<!--    <item-->
-<!--        android:id="@+id/productListFragment"-->
-<!--        android:icon="@drawable/ic_baseline_home_24"-->
-<!--        android:title="@string/catalog" />-->
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="@string/settings" />
 </menu>

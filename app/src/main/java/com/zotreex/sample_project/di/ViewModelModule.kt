@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.zotreex.sample_project.ui.SampleViewModel
 import com.zotreex.sample_project.ui.SearchViewModel
+import com.zotreex.sample_project.ui.SettingsViewModel
 import com.zotreex.sample_project.ui.WeatherInfoViewModel
 import dagger.Binds
 import dagger.Module
@@ -29,4 +30,9 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(SearchViewModel::class)
     abstract fun searchViewModel(searchViewModel: SearchViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SettingsViewModel::class)
+    abstract fun settingsViewModel(settingsViewModel: SettingsViewModel): ViewModel
 }

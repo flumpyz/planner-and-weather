@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
             app:destination="@id/weatherInfoFragment" />
+        <action
+            android:id="@+id/action_sampleFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
     <fragment
@@ -21,9 +24,14 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.zotreex.sample_project.ui.SearchFragment"
-        android:label="WeatherInfoFragment" >
+        android:label="SearchFragment" >
         <action
             android:id="@+id/action_sampleFragment_to_weatherInfoFragment"
             app:destination="@id/weatherInfoFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.zotreex.sample_project.ui.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
